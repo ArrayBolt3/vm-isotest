@@ -75,6 +75,7 @@ Download a new ISO file (or sync an existing one), verify it, and stop. The ISO 
 * -ramdisk: Installs the VM in RAMDisk mode, where the virtual drive is stored entirely in your system's RAM. Not recommended on system with less than 32 GB of RAM.
 * -live: Initiates a live test. The VM is not rebooted after you close it the first time.
 * -nodisk: Does not create a virtual disk for the VM. Most useful in combination with -live.
+* -nonet: Disables the virtual network adapter, resulting in no Internet access within the VM.
 
 ## Warnings:
 

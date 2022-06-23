@@ -97,6 +97,9 @@ while [ $cntr -le $(($# - 1)) ]; do
         elif [ "$arg" = "-nodisk" ]; then
             hitArgListEnd="no"
             noDisk="yes"
+        elif [ "$arg" = "-nonet" ]; then
+            hitArgListEnd="no"
+            noNet="yes"
         fi
     else
         if [ "$getArgValue" = "cpus" ]; then
@@ -220,6 +223,9 @@ if [ "$vmmode" != "dlonly" ]; then
     qemuCmdline="-enable-kvm -smp $numCPUs -m $ramSize -machine q35 -device qemu-xhci -device usb-tablet -device usb-kbd -device intel-hda -device hda-duplex"
     if [ "$efiFirmware" = "yes" ]; then
         qemuCmdline="$qemuCmdline -bios /usr/share/ovmf/OVMF.fd"
+    fi
+    if [ "$noNet" = "yes" ]; then
+        qemuCmdline="$qemuCmdline -nic none"
     fi
     if [ "$graphicsMode" = "qxl" ]; then
         qemuCmdline="$qemuCmdline -vga qxl"

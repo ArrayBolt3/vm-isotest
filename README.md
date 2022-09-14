@@ -42,11 +42,11 @@ Download a new ISO file (or sync an existing one), verify it, and launch a testi
 
     vm-isotest -d [options] http://www.example.com/path/to/file.iso.zsync http://www.example.com/path/to/SHA256SUMS.gpg http://www.example.com/path/to/SHA256SUMS
 
-Creates a new testing VM with a local ISO file. The VM will boot, allow you to install, reboot, allow you to test, then will be automatically deleted.
+Create a new testing VM with a local ISO file. The VM will boot, allow you to install, reboot, allow you to test, then will be automatically deleted.
 
     vm-isotest -l [options] /path/to/local.iso
 
-Boots an existing VM disk image. The VM will not be automatically deleted.
+Boot an existing VM disk image. The VM will not be automatically deleted.
 
     vm-isotest -b [options] /path/to/local.qcow2
 

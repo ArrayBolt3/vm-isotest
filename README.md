@@ -100,11 +100,13 @@ Lastly, there are some sanity checks, but a lot of user input is not validated. 
 ## TODO:
 
 * Add the "-include" feature. This will package the contents of a folder into a FAT32 disk image and attach it to the VM, allowing the user to access tools within the VM.
-* Make the code something that doesn't look so utterly catastrophic.
+* Add EFI Secure Boot support.
+* Add a folder sharing feature that uses the virtfs feature of QEMU.
+* Port this whole mess to Python so that future development is easy.
 
 ## Known problems:
 
-virgl graphics don't seem to work on my system - I can tell that the VM is running due to the fact that the mouse cursor does stuff when hovering over the VM window, but the VM screen remains black. I'm using a GTX 1050 Ti nVidia card with proprietary drivers on Ubuntu Studio 22.04, so the nVidia stuff might have something to do with it. At any rate, when using `-graphics virgl`, YMMV.
+virgl graphics don't seem to work on my desktop - I can tell that the VM is running due to the fact that the mouse cursor does stuff when hovering over the VM window, but the VM screen remains black. I'm using a GTX 1050 Ti NVIDIA card with proprietary drivers on Ubuntu Studio 22.04, so the NVIDIA stuff might have something to do with it. At any rate, when using `-graphics virgl`, it may or may not work.
 
 The script doesn't automatically determine if the test results were successful - it just prints them on the terminal and then waits for you to press a key to acknowledge that you've seen the results. I'm not sure if this counts as a bug or a feature, so I've left it as it is for now.
 

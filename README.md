@@ -74,7 +74,7 @@ Download a new ISO file (or sync an existing one), verify it, and stop. The ISO 
 
 * -efi: Enables UEFI firmware on the VM, rather than the default SeaBIOS. Secure Boot is not enabled.
 * -persist: Do not delete the VM at the end of the test.
-* -ramdisk: Installs the VM in RAMDisk mode, where the virtual drive is stored entirely in your system's RAM. Not recommended on system with less than 32 GB of RAM.
+* -ramdisk: Installs the VM in RAMDisk mode, where the virtual drive is stored entirely in your system's RAM. Not recommended on system with less than 32 GB of RAM. You should have at least 15 GB of free space in your /dev/shm folder if you use this.
 * -live: Initiates a live test. The VM is not rebooted after you close it the first time.
 * -nodisk: Does not create a virtual disk for the VM. Most useful in combination with -live.
 * -nonet: Disables the virtual network adapter, resulting in no Internet access within the VM.

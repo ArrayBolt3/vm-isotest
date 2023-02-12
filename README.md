@@ -1,5 +1,7 @@
 # vm-isotest - A rapid virtualization-based testing system for Linux alpha and beta testers.
 
+For those who are wondering, yes, this project is still maintained, and will be for as long as I use this tool myself. Currently running it on Ubuntu Unity 22.10.
+
 ## Why?
 
 As an Ubuntu tester, I make VMs. A **lot** of VMs. I generally use the exact same specs on my VMs, I use them for just long enough to do a test, and then I throw them away. Since my work involves so many disposable VMs, I started to get tired of the UI provided by Gnome Boxes that I was using. It worked well, and is slick for lots of uses, but for me, navigating a UI to spin up a VM is a bit of a hassle.
@@ -101,7 +103,7 @@ Lastly, there are some sanity checks, but a lot of user input is not validated. 
 
 * Add the "-include" feature. This will package the contents of a folder into a FAT32 disk image and attach it to the VM, allowing the user to access tools within the VM.
 * Add EFI Secure Boot support.
-* Add a folder sharing feature that uses the virtfs feature of QEMU.
+* Add a folder sharing feature that uses the virtfs feature of QEMU. This will probably replace the -include planned feature.
 * Port this whole mess to Python so that future development is easy.
 
 ## Known problems:

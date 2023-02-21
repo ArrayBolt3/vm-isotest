@@ -108,6 +108,8 @@ Lastly, there are some sanity checks, but a lot of user input is not validated. 
 
 ## Known problems:
 
+BUG: It appears that using "-live -nodisk -d" together will result in a QEMU error. I don't know why currently but intend to debug this soon-ish. In the meantime, this can be worked around by downloading the ISO you want with "-dlonly" and then using "-live -nodisk -l" to boot the ISO.
+
 virgl graphics don't seem to work on my desktop - I can tell that the VM is running due to the fact that the mouse cursor does stuff when hovering over the VM window, but the VM screen remains black. I'm using a GTX 1050 Ti NVIDIA card with proprietary drivers on Ubuntu Studio 22.04, so the NVIDIA stuff might have something to do with it. At any rate, when using `-graphics virgl`, it may or may not work.
 
 The script doesn't automatically determine if the test results were successful - it just prints them on the terminal and then waits for you to press a key to acknowledge that you've seen the results. I'm not sure if this counts as a bug or a feature, so I've left it as it is for now.

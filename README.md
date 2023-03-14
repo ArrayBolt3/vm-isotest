@@ -1,6 +1,6 @@
 # vm-isotest - A rapid virtualization-based testing system for Linux alpha and beta testers.
 
-For those who are wondering, yes, this project is still maintained, and will be for as long as I use this tool myself. Currently running it on Ubuntu Unity 22.10.
+For those who are wondering, yes, this project is still maintained, and will be for as long as I use this tool myself. Currently running it on Kubuntu 22.04.
 
 ## Why?
 

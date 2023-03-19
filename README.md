@@ -42,15 +42,15 @@ To uninstall, run `sudo rm /usr/local/bin/vm-isotest`. If you want to get rid of
 
 Download a new ISO file (or sync an existing one), verify it, and launch a testing VM. The VM will boot from the ISO, allowing you to install, then reboot from the disk image for testing, then will be automatically deleted.
 
-    vm-isotest -d [options] http://www.example.com/path/to/file.iso.zsync http://www.example.com/path/to/SHA256SUMS.gpg http://www.example.com/path/to/SHA256SUMS
+    vm-isotest [options] -d http://www.example.com/path/to/file.iso.zsync http://www.example.com/path/to/SHA256SUMS.gpg http://www.example.com/path/to/SHA256SUMS
 
 Create a new testing VM with a local ISO file. The VM will boot, allow you to install, reboot, allow you to test, then will be automatically deleted.
 
-    vm-isotest -l [options] /path/to/local.iso
+    vm-isotest [options] -l /path/to/local.iso
 
 Boot an existing VM disk image. The VM will not be automatically deleted.
 
-    vm-isotest -b [options] /path/to/local.qcow2
+    vm-isotest [options] -b /path/to/local.qcow2
 
 Download a new ISO file (or sync an existing one), verify it, and stop. The ISO can be used later.
 
